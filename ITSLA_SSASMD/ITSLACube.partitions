@@ -41,5 +41,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Inventory</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ac0cc207-3664-48a3-a1a9-2e52f605f0ed">
+          <ID>v Fact Inventory</ID>
+          <Name>v Fact Inventory</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="adea3d86-3adf-4fad-bfd8-efba8ad817db">
+            <DataSourceViewID>ContosoRetailDW</DataSourceViewID>
+            <TableID>dbo_vFactInventory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>
