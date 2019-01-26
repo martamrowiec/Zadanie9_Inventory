@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="72" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9071" scrolltop="11467" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12356" y="11536" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="72" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7649" scrolltop="29731" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="18018" y="8943" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -509,11 +509,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-9071</Value>
+      <Value>-7649</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>11467</Value>
+      <Value>29731</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -525,7 +525,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>100</Value>
+      <Value>75</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -1124,6 +1124,195 @@
         </Calculation>
       </Calculations>
     </Perspective>
+    <Perspective dwd:design-time-name="54dd0845-8d99-4fa5-a769-19879dbddd0c">
+      <ID>Perspective 2</ID>
+      <Name>Perspective_vFactInventory</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="32a3e030-ec40-4753-82de-e25f90e93595">
+          <CubeDimensionID>DimDate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="94da6fdc-5e66-4107-b6d3-81e0d401a45d">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="bc729d22-9b58-4b9e-a089-79e3fa6387bd">
+              <AttributeID>Is Work Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3fbc944b-b97b-4cfe-b131-9233569ce442">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="18f41643-49d5-4a2f-a32c-ab0317237be9">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5b7cdd9b-d03d-4534-bae5-1325947563e6">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f1281439-dee2-4b61-a6b6-e16d5a9431ff">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e2edc83d-177a-4929-bffc-a32a6bcf62d9">
+              <AttributeID>Calendar Half Year Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="190f2640-bb53-42b4-be60-f0a90bd7fd42">
+              <AttributeID>Calendar Month Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="16c23e6b-4e01-4123-9095-bff281933308">
+              <AttributeID>Calendar Quarter Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="386e44d8-f4a1-4d5c-bff7-b07a4b41e101">
+              <AttributeID>Calendar Year Label</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="2e926347-a13b-43f9-9299-34cd74d2438f">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="1092c692-ccba-43c0-86e8-702aa4dc7c05">
+          <CubeDimensionID>DimStore</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7293cafc-f172-440d-a0a8-50b115fae27b">
+              <AttributeID>Store Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="818091e1-a094-4569-8413-e9a8db05e622">
+              <AttributeID>Store Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c86bbd3b-745d-405e-adfe-57d03e57ae71">
+              <AttributeID>Store Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f50c91ed-7545-4414-a796-c5c1148ab3b8">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3162b7a0-a699-4455-b76e-d3bbfcd7fce8">
+              <AttributeID>Geography Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9aa37c11-d6ff-4ce5-bdd6-f555a7f3c59f">
+              <AttributeID>Entity Key</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="dd0dd37e-4a43-424b-9575-1ddc2ebf9efe">
+          <CubeDimensionID>DDimProduct</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf73b873-a559-4f77-a61b-00cc834195ea">
+              <AttributeID>Product Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b7bea59-c10d-401a-8b53-06cbd65616fe">
+              <AttributeID>Product Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7e3a47ea-f5f8-4feb-84da-e3a185a7222f">
+              <AttributeID>Product Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="320dea52-63bd-4e9f-9cda-9352f657ab88">
+              <AttributeID>Manufacturer</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3b915721-30a7-4089-a217-265ed8306958">
+              <AttributeID>Brand Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="44accefc-cac5-4605-a906-fdbd284179b9">
+              <AttributeID>Class ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b326254-7cdd-43c0-a09a-cfb83de5ccdc">
+              <AttributeID>Class Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5a507e06-91c4-437e-bf0f-29b628912a40">
+              <AttributeID>Style ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0f98a46d-799a-4ab1-b0e3-26b2ed7f01b1">
+              <AttributeID>Style Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f668ab99-4e73-4226-8c59-186deb8abd5f">
+              <AttributeID>Color ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c143afb4-9ccf-4db8-bd84-2bd372e135c8">
+              <AttributeID>Color Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="13529a25-d0ad-45e9-859d-d3ce01861fa1">
+              <AttributeID>Product Subcategory Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c18621c-2868-448a-a675-5f831908d7a9">
+              <AttributeID>Product Subcategory Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="26260d3a-8ccf-497a-b95e-3186024bb61a">
+              <AttributeID>Product Subcategory Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b123fb3c-3657-40b0-b58e-06ef742b3708">
+              <AttributeID>Product Subcategory Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d91d4174-486f-4230-93b3-c90d1fe37cdc">
+              <AttributeID>Product Category Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="23689458-cafe-42c1-8fcb-3255dc2841e3">
+              <AttributeID>Product Category Label</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="ea2c517b-91a1-43b1-8113-c3a0e2a6a1e1">
+              <AttributeID>Product Category Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e1bd3f7-7980-41ec-9209-149a8066b0c7">
+              <AttributeID>Product Category Description</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="99a6e2be-61c6-4ca5-bc48-29f6cf3b8759">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="58ea119e-b196-4887-90b7-cd0abe893bb1">
+          <CubeDimensionID>DDimCurrency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="86474fc4-1752-469a-9f8f-816f289aeb3f">
+              <AttributeID>Currency Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="870151e3-152b-478b-adf0-1bbd78bd848a">
+              <AttributeID>Currency Description</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="8ad28187-9ab3-4ab0-ad7c-40471d8b4fc5">
+          <MeasureGroupID>v Fact Inventory</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="17fbd90c-be5b-4e95-9dd1-f30ed541f968">
+              <MeasureID>On Hand Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b1236bd7-6405-41ed-8308-597430293f81">
+              <MeasureID>On Order Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="ab321b66-b738-4d3c-ae99-0953483eaf02">
+              <MeasureID>Safety Stock Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="73447093-4043-4528-bd27-c97f1b1a0e8d">
+              <MeasureID>Unit Cost</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="ade0b66c-283d-4215-a89b-671ea2006b63">
+              <MeasureID>v Fact Inventory Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Calculations>
+        <Calculation dwd:design-time-name="1b7f804e-f5d3-4913-90b8-482c06dd4e85">
+          <Name>[Measures].[vFactInventorySafetyStockQuantity]</Name>
+          <Type>Member</Type>
+        </Calculation>
+        <Calculation dwd:design-time-name="0a96115b-8503-4c9f-b111-2593c75eb771">
+          <Name>[Measures].[vFactInventoryUnitCost]</Name>
+          <Type>Member</Type>
+        </Calculation>
+        <Calculation dwd:design-time-name="3dcfb01f-2bfd-4eb0-9e39-75bf1336956f">
+          <Name>[Measures].[vFactInventoryOnOrderQuantity]</Name>
+          <Type>Member</Type>
+        </Calculation>
+        <Calculation dwd:design-time-name="91276db4-2e4f-459b-b4f8-b112bbcfe98e">
+          <Name>[Measures].[vFactInventoryOnHandQuantity]</Name>
+          <Type>Member</Type>
+        </Calculation>
+      </Calculations>
+    </Perspective>
   </Perspectives>
   <MeasureGroups>
     <MeasureGroup dwd:design-time-name="63f7cc2d-d990-49eb-af7b-24dddc893cb0">
@@ -1629,17 +1818,30 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE; 
+
+CREATE MEMBER CURRENTCUBE.[Measures].[vFactInventoryOnHandQuantity]
+ AS [Measures].[On Hand Quantity]/[Measures].[vFactInventoryCount], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v Fact Inventory'  ;  CREATE MEMBER CURRENTCUBE.[Measures].[vFactInventoryOnOrderQuantity]
+ AS [Measures].[On Order Quantity]/[Measures].[vFactInventoryCount], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v Fact Inventory'  ;  CREATE MEMBER CURRENTCUBE.[Measures].[vFactInventoryUnitCost]
+ AS [Measures].[Unit Cost]/[Measures].[vFactInventoryCount], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v Fact Inventory'  ;  CREATE MEMBER CURRENTCUBE.[Measures].[vFactInventorySafetyStockQuantity]
+ AS [Measures].[Safety Stock Quantity]/[Measures].[vFactInventoryCount], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'v Fact Inventory'  ;   
  
 CREATE MEMBER CURRENTCUBE.[Measures].[CostAvg]
  AS [Measures].[Cost Amount] / [Measures].[RowCount], 
 FORMAT_STRING = "#,##0.00", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'ITMachine'  ; 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'ITMachine';   
 
 CREATE MEMBER CURRENTCUBE.[Measures].[CostSpread]
 AS [Measures].[Max Cost Amount] - [Measures].[Min Cost Amount], 
 FORMAT_STRING = "#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'ITMachine'  ; </Text>
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'MiaryKalkulowane' ,  ASSOCIATED_MEASURE_GROUP = 'ITMachine'; </Text>
         </Command>
       </Commands>
       <CalculationProperties>
