@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="72" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7649" scrolltop="29731" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="18018" y="8943" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="72" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9285" scrolltop="5287" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="18018" y="8943" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -509,11 +509,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-7649</Value>
+      <Value>-9285</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>29731</Value>
+      <Value>5287</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1271,6 +1271,37 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension dwd:design-time-name="d68a3ad3-a12b-47fb-b7f6-4b44734b1e0a">
+          <CubeDimensionID>DimEntity</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7a6450c9-0ece-49f2-9106-e83e886d6bf9">
+              <AttributeID>Entity Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3a1c96b2-8c7d-4ab1-88d5-1a3a51df1974">
+              <AttributeID>Parent Entity Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d971f926-e3dd-4f5a-b9d7-f52dfd2cbdad">
+              <AttributeID>Entity Description</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d5d1530f-04be-476e-9b8d-0a21a0a36f32">
+              <AttributeID>Entity Type</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6a2acc02-6ee7-4339-9405-bf73827bc915">
+              <AttributeID>Status</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="8217e04e-50a6-4c46-aee4-ddb22ee4f747">
+          <CubeDimensionID>DimGeography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4aaf6241-e2e7-470d-833e-9af8b0aad614">
+              <AttributeID>Geography Key</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="de8f45fb-e742-4b3d-9ec2-8cc310d47af4">
+              <AttributeID>Geography Type</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
       <MeasureGroups>
         <MeasureGroup dwd:design-time-name="8ad28187-9ab3-4ab0-ad7c-40471d8b4fc5">
@@ -1646,6 +1677,12 @@
             </Source>
           </Source>
           <FormatString>#,##0</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="6744eaf3-951b-4872-af0a-11950f93859c">
+              <Language>1045</Language>
+              <Caption>Ilość otrzymana</Caption>
+            </Translation>
+          </Translations>
         </Measure>
         <Measure dwd:design-time-name="24133053-f810-484e-8c47-90053641566e">
           <ID>On Order Quantity</ID>
@@ -1658,6 +1695,12 @@
             </Source>
           </Source>
           <FormatString>#,##0</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="760b9b21-5acd-47b8-b616-1b7684d69bfc">
+              <Language>1045</Language>
+              <Caption>Ilość na zamówieniu</Caption>
+            </Translation>
+          </Translations>
         </Measure>
         <Measure dwd:design-time-name="52e073e0-bf2a-4d25-9c29-22dca6848d43">
           <ID>Safety Stock Quantity</ID>
@@ -1670,6 +1713,12 @@
             </Source>
           </Source>
           <FormatString>#,##0</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="379dee4d-8432-40ca-8c86-33f799798657">
+              <Language>1045</Language>
+              <Caption>Ilość zapasu</Caption>
+            </Translation>
+          </Translations>
         </Measure>
         <Measure dwd:design-time-name="c4fc7108-baab-486e-a667-8ffc407128aa">
           <ID>Unit Cost</ID>
@@ -1682,6 +1731,12 @@
             </Source>
           </Source>
           <FormatString>#,##0.00</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="c6d90224-8ebd-4cbb-9564-7b8021b93b22">
+              <Language>1045</Language>
+              <Caption>Koszt</Caption>
+            </Translation>
+          </Translations>
         </Measure>
         <Measure dwd:design-time-name="2bcc29b3-76fd-4488-8ba1-045c6745c8e2">
           <ID>v Fact Inventory Count</ID>
@@ -1695,6 +1750,12 @@
             </Source>
           </Source>
           <Visible>false</Visible>
+          <Translations>
+            <Translation dwd:design-time-name="420a1f17-9712-4cef-acf1-a0411cb30360">
+              <Language>1045</Language>
+              <Caption>Liczba Wierszy</Caption>
+            </Translation>
+          </Translations>
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
